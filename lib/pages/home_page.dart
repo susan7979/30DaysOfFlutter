@@ -4,7 +4,7 @@ import 'package:flutter_catalog/widgets/drawer.dart';
 class HomePage extends StatelessWidget {
   final int days = 30;
   final String name = "Codepur";
-
+//Day 11 we learned about constraints and context//
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +16,7 @@ class HomePage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("Welcome to $days days of flutter by $name"),
+          child: Text(context.runtimeType.toString()),
         ),
       ),
       drawer: MyDrawer(),
